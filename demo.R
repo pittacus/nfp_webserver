@@ -79,7 +79,7 @@ calc_sim_score_apcluster <- function(net, refnet, option, homedir){
   names(refnetnode_cluster_index) <- names(node_cluster_index_all)
   
   
-  return(list(networkfingerprint = nfp@standardize_score,
+  return(list(networkfingerprint = nfp@standardized_score,
 	  netnode_cluster_index = netnode_cluster_index,
     refnetnode_cluster_index = refnetnode_cluster_index,
     score_of_cluster = rnorm(length(nfp@cluster))

@@ -106,13 +106,14 @@ calc_sim_score <- function(net, refnet,option, homedir){
   if(algorithm == "APCLUSTER")
 	  ret=calc_sim_score_apcluster(net, refnet,option, homedir)
   else if (algorithm == "GHOST")
-    ret=calc_sim_score_apcluster(net, refnet,option, homedir)
+    ret=calc_sim_score_ghost(net, refnet,option, homedir)
 	else if (algorithm == "SPINAL")
-	  ret=calc_sim_score_apcluster(net, refnet,option, homedir)
+	  ret=calc_sim_score_spinal(net, refnet,option, homedir)
 	else if (algorithm == "ISORANK")
-	  ret=calc_sim_score_apcluster(net, refnet,option, homedir)
+	  ret=calc_sim_score_isorank(net, refnet,option, homedir)
 	else return("Undefined algorithm")
 	
   return(ret)	
 }
 
+calc_sim_score(net,refnet,option, "~")

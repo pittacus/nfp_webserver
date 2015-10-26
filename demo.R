@@ -20,6 +20,7 @@ refnet=list(
   description="Reference networks from KEGG Pathway Database, updated by 2015/10/26",
   name="KEGG Signalling Pathway",
   create_time = "2015/10/1",
+  update_time = "2015/10/1",
   create_user = "system",
   public = TRUE,
   organism = "hsa"

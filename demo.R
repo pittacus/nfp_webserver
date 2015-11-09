@@ -1,3 +1,4 @@
+
 if (!require('devtools'))  install.packages("devtools") 
 if (!require('NFP')) devtools::install_github("yiluheihei/NFP")
 require(NFP)
